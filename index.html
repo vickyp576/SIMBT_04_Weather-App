@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="card">
+        <div class="formdiv">
+            <div class="input-autocom">
+                <input type="text" placeholder="Enter city name" id="inputBox">
+                <ul id="autocompleteDropdown"></ul>
+            </div>
+            
+            <button id="searchBtn"><img src="./images/search.jpg" id="search"></button>
+        </div>
+
+        <div class="error">
+            <p>Invalid City name</p>
+        </div>
+
+        <div class="weather">
+
+            <p class="cityName"> Weather in Tokyo </p>
+            <span class="temperture">40.23</span> <span class="degCel">&deg;C</span>
+
+            <div class="weather-condition">
+                <img src="./images/rain.png" class="weather-icon">
+                <p class="weather-desc">Rainy</p>
+            </div>
+
+                <p class="humidity">Humidity: 88%</p>
+                <p class="wind">Wind speed: 8.23 km/h</p>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

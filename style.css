@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursion, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+.card{
+    position: absolute;
+    width: 90%;
+    max-width: 450px;
+    padding: 40px 35px;
+    border: 1px solid lightblue;
+    /* box-shadow: rgba(239, 35, 79, 0.588) 0px 50px 30px -20px, rgba(229, 46, 46, 0.434) 0px 40px 60px 30px, rgba(19, 45, 73, 0.655) 0px 4px 5px 10px inset; */
+    border-radius: 20px;
+    /* text-align: center; */
+    background: rgb(15, 142, 205);
+    color: black;
+}
+
+.formdiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#inputBox{
+    border: 0;
+    outline: 0;
+    background: black;
+    color: white;
+    padding: 10px 25px;
+    height: 50px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    /* box-shadow: rgba(42, 97, 120, 0.12) 0px 2px 4px 0px, rgba(55, 116, 141, 0.32) 0px 2px 16px 0px; */
+} 
+
+.formdiv button{
+    border: 0;
+    border-radius: 50%;
+    height: 52px;
+    width: 52px;
+    padding: 10px 10px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#search{
+    height: 115%;
+}
+
+#searchBtn:hover{
+    cursor: pointer;
+}
+
+.weather{
+    padding-top: 55px;
+    padding-left: 30px;
+    display: none;
+}
+
+.cityName{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.temperture{
+    font-size: 35px;
+}
+
+.degCel{
+    font-size: 35px;
+}
+
+.weather-condition{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.weather-icon{
+    height: 100px;
+}
+
+.weather-desc{
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.humidity{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.wind{
+    font-size: 20px;
+}
+
+.error{
+    margin-top: 15px;
+    font-size: 15px;
+    margin-left: 20px;
+    display: none;
+}
+
+.input-autocom{
+    display: flex;
+    flex-direction: column;
+}
+
+/* auto completion part of city suggestion */
+#autocompleteDropdown {
+    position: absolute;
+    margin-top: 42px;
+    margin-left: 25px;
+    list-style: none;
+    display: none;
+  }
+  
+  #autocompleteDropdown li {
+    border: 1px solid rgba(248, 245, 245, 0.697);
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #6e6b6ba3;
+    color: rgb(253, 253, 253);
+  }
+  
+  #autocompleteDropdown li:hover {
+    background-color: #72bddd9b;
+  }
+  
